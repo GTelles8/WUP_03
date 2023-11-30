@@ -17,17 +17,17 @@ davisdata <- read.csv(file="UCDavis.csv")
 
 ## Introduction
 
-Our Goal is to answer this question Is there a difference between the alcohol consumed between the row you choose to sit in??
+Is there a difference between the alcohol consumed and the row you choose to sit in??
 
 $H_0$ There is no difference in the alcohol consumed based on what row you sit in.
 
 $H_0$ There is no difference in the alcohol consumed based on what row you sit in
 
-##Methods
+## Methods
 
 Alchohol is considered numerical data, while seats are considered categorical variables. Therefor we will use the Num-Cat helper file.
 
-##Graphical Results
+## Graphical Results
 
 ```{r}
 boxplot(alcohol~Seat,data=davisdata)
